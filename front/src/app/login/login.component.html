@@ -1,0 +1,94 @@
+<section class="">
+  <div class="container-fluid p-5">
+    <div class="row px-3">
+      <div class="col-12 col-md-6 fadeIn px-1 py-1">
+        <div class="row d-flex justify-content-center">
+          <img src="../../../assets/logo.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 px-1 py-1 scene">
+        <div class="flipper" [ngClass]="{ 'is-flipped': clicked }">
+          <div class="formContent p-2 flipper__face">
+            <form
+              #loginForm="ngForm"
+              (ngSubmit)="onLogin(loginForm)"
+              class="p-2"
+            >
+              <input
+                class="fadeIn second cred mb-2 p-2"
+                name="username"
+                placeholder="Username"
+                ngModel
+                required
+              />
+              <input
+                type="password"
+                class="fadeIn third cred mb-2 p-2"
+                name="password"
+                placeholder="Password"
+                ngModel
+                required
+              />
+              <button
+                [disabled]="!loginForm.valid"
+                (click)="onLogin(loginForm)"
+                class="fadeIn fourth p-2"
+              >
+                Login
+              </button>
+            </form>
+            <div class="m-0 py-2 text-center">
+              <a class="fadeIn fourth forgetPass" href="#"
+                >Forgotten Password?</a
+              >
+            </div>
+            <div id="formFooter" class="pt-3 fadeIn fourth">
+              <button class="btn my-auto hide_below" (click)="flip()" href="#">
+                Create New Account
+              </button>
+            </div>
+          </div>
+          <!---------------------------------------------------------------------------------------------------------------------->
+          <div class="pt-md-3 px-3 formContent flipper__face back">
+            <form #signForm="ngForm">
+              <h4>SIGN UP</h4>
+              <input
+                class="fadeIn second cred mb-2 p-2"
+                name="username"
+                placeholder="We need a Username*"
+                ngModel
+                required
+              />
+              <input
+                type="password"
+                class="fadeIn third cred mb-2 p-2"
+                name="password"
+                placeholder="We need a Password*"
+                ngModel
+                required
+              />
+            </form>
+            <div class="row mt-md-1">
+              <div class="col-md-6 col-12">
+                <button
+                  [disabled]="!loginForm.valid"
+                  type="submit"
+                  class="p-2"
+                  (click)="flip()"
+                >
+                  Sign Up
+                </button>
+              </div>
+              <div class="col-md-6 col-12">
+                <button class="p-2 cancel hide_below" (click)="flip()">
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.b{
+  border: solid blue 1px !important;
+}
+
+.r{
+  border: solid red 1px !important;
+}
+
+.g{
+  border: solid green 1px !important;
+}
+
+body, html{
+  background-color: #f0f2f5;
+}
+
+li{
+  list-style-type: none;
+}
+
+@media (min-width: 768px){
+  .hide_over{
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+  .hide_below{
+    display: none;
+  }
+}

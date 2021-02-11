@@ -1,0 +1,19 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<div>
+  <button *ngIf="!isRecording" (click)="startRecording()">Start Recording</button>
+  <button *ngIf="isRecording" (click)="stopRecording()">Stop Recording</button>
+</div>
+
+<div *ngFor="let url of urls">
+  <!-- <audio controls="" *ngIf="url"> -->
+   <audio controls="" *ngIf="url"> 
+    <source id="audio" [src]="sanitize(url)" type="audio/wav">
+  </audio>
+
+  <a [href]="sanitize(url)" download="audio.wav"><button class="btn btn-warning"> Download </button></a>
+</div>

@@ -1,0 +1,154 @@
+.btn {
+  background-color: #42b72a; /*#ed2e50;*/
+  font-weight: 700;
+  color: #f0f2f5;
+}
+.btn:hover {
+  box-shadow: 0 8px 15px 0 rgba(34, 40, 49, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.col-12 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.forgetPass {
+  color: #222831 !important;
+  font-size: x-small;
+  text-align: center;
+}
+
+/*-----------------------------------------------*/
+
+@media (min-width: 766px) {
+  .hide_over {
+    display: none;
+  }
+
+  .formContent {
+    border-radius: 7px 7px 7px 7px;
+    background: white;
+    border: solid rgba(128, 128, 128, 0.3) 1px;
+    box-shadow: 0 10px 10px 0 rgba(34, 40, 49, 0.5);
+    text-align: center;
+  }
+
+  .scene {
+    perspective: 600px;
+  }
+
+  .flipper {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+
+  .is-flipped {
+    transform: rotateY(180deg);
+  }
+
+  .flipper__face {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+/*-----------------------------------------------*/
+
+@media (max-width: 766px) {
+  .hide_below {
+    display: none;
+  }
+
+  .formContent {
+    background-color: #f0f2f5;
+  }
+
+  .flipper,
+  .is-flipped {
+    border: none !important;
+  }
+}
+
+img {
+  width: 45%;
+  height: 45%;
+}
+
+button {
+  background-color: #222831;
+  border: none;
+  color: #f0f2f5;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: small;
+  border-radius: 5px 5px 5px 5px;
+  width: 100%;
+}
+
+button:hover {
+  box-shadow: 0 8px 15px 0 rgba(34, 40, 49, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.cred {
+  background-color: white;
+  border-radius: 5px;
+  border: solid rgba(128, 128, 128, 0.3) 1px;
+  color: #222831;
+  text-decoration: none;
+  display: inline-block;
+  font-size: small;
+  width: 100%;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.cred:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #222831;
+}
+
+.cred:placeholder {
+  color: #cccccc;
+}
+
+*:focus {
+  outline: none;
+}
+
+#formFooter {
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+section {
+  height: 100vh;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  vertical-align: middle;
+  display: flex;
+}
+
+
+.cancel {
+  background-color: #ed2e50 !important;
+}
