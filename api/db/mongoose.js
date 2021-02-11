@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 mongoose
   .connect(
-    "mongodb://alelou:alelou@cluster0-shard-00-00.wtjf7.mongodb.net:27017,cluster0-shard-00-01.wtjf7.mongodb.net:27017,cluster0-shard-00-02.wtjf7.mongodb.net:27017/calio?ssl=true&replicaSet=atlas-9ll9xg-shard-0&authSource=admin&retryWrites=true&w=majority",
+    "Colle--le--lien--ici",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {
